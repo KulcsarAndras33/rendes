@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "rendes",
+    'name': "Hospital",
 
     'summary': """""",
 
@@ -20,10 +20,7 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-        'views/rendes.xml'
+        'patient.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
