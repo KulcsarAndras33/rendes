@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22b849b4-09cb-4c2b-badd-6ede2910d113" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/patient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Program Files (x86)\Odoo 13.0\server\odoo\addons\rendes\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WLBXHw6yYMFdiiyIak6nVeatsd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22b849b4-09cb-4c2b-badd-6ede2910d113" name="Default Changelist" comment="" />
+      <created>1578919032385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578919032385</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Commit Message">
+      <created>1578919737011</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578919737011</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit Message">
+      <created>1578929095481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578929095482</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added search view">
+      <created>1579012318141</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579012318141</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Commit Message" />
+    <MESSAGE value="Added search view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added search view" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1579091116158">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1579091116158" />
+    <state x="421" y="83" key="FileChooserDialogImpl" timestamp="1579091093936">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1579091093936" />
+    <state x="451" y="264" width="258" height="210" key="Github.ShareDialog" timestamp="1579090886234">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="451" y="264" width="258" height="210" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1579090886234" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1579090877242">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1579090877242" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1579012326282">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1579012326282" />
+    <state x="655" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579084421007">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="655" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579084421007" />
+  </component>
+</project>

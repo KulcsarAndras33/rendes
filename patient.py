@@ -5,6 +5,7 @@ from odoo import models, fields, api
 
 class HospitalPatient(models.Model):
     _name = 'hospital.patient'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Patient Record'
     _rec_name = 'patient_name'
 
@@ -12,3 +13,4 @@ class HospitalPatient(models.Model):
     patient_age = fields.Integer('Age')
     notes = fields.Text('Notes')
     image = fields.Binary('Image')
+    gender = fields.Selection([('male', 'Male'),('female', 'Female'),('other', 'Other')], default='male', string='Gender')
