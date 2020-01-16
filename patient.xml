@@ -13,6 +13,7 @@
                         <field name="gender"/>
                     </group>
                     <group>
+                        <field name="patient_isurgent"/>
                         <field name="notes"/>
                         <field name="image"/>
                     </group>
@@ -31,7 +32,7 @@
         <field name="model">hospital.patient</field>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree default_order="patient_urgency desc">
                 <field name="patient_name"/>
                 <field name="patient_age"/>
                 <field name="gender"/>
