@@ -37,6 +37,7 @@
                 <field name="patient_age"/>
                 <field name="gender"/>
                 <field name="notes"/>
+                <field name="patient_urgency"/>
             </tree>
         </field>
     </record>
