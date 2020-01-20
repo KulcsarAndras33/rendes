@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22b849b4-09cb-4c2b-badd-6ede2910d113" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user_groups.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/patient.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,9 +132,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1579179558595" />
-    <state x="655" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579205101520">
+    <state x="655" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1579514568167">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="655" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579205101520" />
+    <state x="655" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1579514568167" />
   </component>
 </project>

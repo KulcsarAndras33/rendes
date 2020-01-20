@@ -17,15 +17,30 @@ class HospitalPatient(models.Model):
     gender = fields.Selection([('male', 'Male'),('female', 'Female'),('other', 'Other')], default='male', string='Gender')
     patient_isurgent = fields.Boolean('Is urgent')
     patient_urgency = fields.Integer('Urgency', store=True, readonly=True, compute='_compute_urgency')
+    patient_doctor_name = fields.Many2one('hospital.doctor', string='Doctors name')
 
     @api.depends('patient_age', 'create_date', 'patient_isurgent')
     def _compute_urgency(self):
         for rule in self:
             rule.patient_urgency = 1
             urgency_byage = abs(30 - rule.patient_age)
-            urgency_bytime = (datetime.now() - rule.create_date).days
             if (rule.patient_isurgent):
                 urgency_byisurgent = 70
             else:
                 urgency_byisurgent = 0
-            rule.patient_urgency += urgency_byage + urgency_bytime + urgency_byisurgent
+            rule.patient_urgency += urgency_byage + urgency_byisurgent
+
+
+class HospitalDoctor(models.Model):
+    _name = 'hospital.doctor'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _description = 'Doctor Record'
+    _rec_name = 'doctor_name'
+
+    doctor_name = fields.Char('Name', required=True)
+    doctor_age = fields.Integer('Age')
+    notes = fields.Text('Notes')
+    image = fields.Binary('Image')
+    gender = fields.Selection([('male', 'Male'),('female', 'Female'),('other', 'Other')], default='male', string='Gender')
+    doctor_professional_field = fields.Selection([('surgeon', 'Surgeon'), ('cardiologist', 'Cardiologist'), ('psychiatrist', 'Psychiatrist')], string='Professional Field')
+    doctor_patients_name = fields.One2many('hospital.patient', 'patient_doctor_name')

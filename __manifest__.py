@@ -21,11 +21,11 @@
     # always loaded
     'data': [
         'patient.xml',
+        'security\ir.model.access.csv',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
-        'security/ir.model.access.csv',
     ],
     'application': True,
 }
