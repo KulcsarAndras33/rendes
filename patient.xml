@@ -71,6 +71,35 @@
         </field>
     </record>
 
+    <record id="appointment_form" model="ir.ui.view">
+        <field name="name">hospital.appointment.form</field>
+        <field name="model">hospital.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Patients">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="doctor_name"/>
+                        </group>
+                        <group>
+                            <field name="patient_name"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="start_date"/>
+                        <field name="duration"/>
+                        <field name="end_date"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
     <!-- FORM VIEWS END -->
 
     <!-- TREE VIEWS -->
@@ -124,7 +153,33 @@
         </field>
     </record>
 
+    <record id="hospital_doctor_search" model="ir.ui.view">
+        <field name="name">hospital.doctor.search</field>
+        <field name="model">hospital.doctor</field>
+        <field name="type">search</field>
+        <field name="arch" type="xml">
+            <search string="Search Doctors">
+                <field name="doctor_age" filter_domain="['|',('doctor_age', 'ilike', self),('doctor_age', 'ilike', self)]"/>
+                <field name="doctor_name" filter_domain="['|',('doctor_name', 'ilike', self),('doctor_name', 'ilike', self)]"/>
+                <separator />
+                <filter string="Male" name="male" domain="[('gender', '=', 'male')]"/>
+                <filter string="Female" name="female" domain="[('gender', '=', 'female')]"/>
+            </search>
+        </field>
+    </record>
+
     <!-- SEARCH VIEWS END-->
+
+    <record model="ir.ui.view" id="hospital_calendar_view">
+            <field name="name">hospital.calendar</field>
+            <field name="model">hospital.appointment</field>
+            <field name="arch" type="xml">
+                <calendar string="Appointment calendar" date_start="start_date" date_stop="end_date" color="doctor_name">
+                    <field name="doctor_name"/>
+                </calendar>
+            </field>
+        </record>
+
 
     <!-- ACTIONS -->
 
@@ -152,6 +207,18 @@
         </field>
     </record>
 
+    <record id="action_appointment" model="ir.actions.act_window">
+        <field name="name">Appointment</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.appointment</field>
+        <field name="view_mode">calendar,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create First Appointment!
+            </p>
+        </field>
+    </record>
+
     <!-- ACTIONS END-->
 
     <!-- MENU ITEMS -->
@@ -159,6 +226,7 @@
     <menuitem id="hospital_root" name="Hospital"/>
     <menuitem id="hospital_patients" name="Patients" parent="hospital_root" action="action_patient"/>
     <menuitem id="hospital_doctor" name="Doctors" parent="hospital_root" action="action_doctor"/>
+    <menuitem id="hospital_appointment" name="Appointment" parent="hospital_root" action="action_appointment"/>
 
     <!-- MENU ITEMS END-->
 
