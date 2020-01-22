@@ -19,6 +19,7 @@ class HospitalPatient(models.Model):
     patient_urgency = fields.Integer('Urgency', store=True, readonly=True, compute='_compute_urgency')
     patient_doctor_name = fields.Many2one('hospital.doctor', string='Doctors name')
 
+
     @api.depends('patient_age', 'create_date', 'patient_isurgent')
     def _compute_urgency(self):
         for rule in self:

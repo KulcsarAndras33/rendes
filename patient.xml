@@ -102,6 +102,7 @@
 
     <!-- FORM VIEWS END -->
 
+
     <!-- TREE VIEWS -->
 
     <record id="patient_tree" model="ir.ui.view">
